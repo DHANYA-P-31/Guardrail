@@ -1,0 +1,8 @@
+
+artifacts/
+data/
+*.parquet
+*.joblib
+*.pt
+*.npz
+__pycache__/
