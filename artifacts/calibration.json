@@ -1,0 +1,14 @@
+[
+  {
+    "head": "emotion",
+    "temperature": 1.0602,
+    "ece_before": 0.0362,
+    "ece_after": 0.0241
+  },
+  {
+    "head": "intent",
+    "temperature": 0.9328,
+    "ece_before": 0.0114,
+    "ece_after": 0.0063
+  }
+]

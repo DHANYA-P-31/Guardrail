@@ -1,0 +1,148 @@
+{
+  "note": "Baseline metrics. Compare against DistilBERT on the same split_manifest test set.",
+  "emotion": {
+    "anger": {
+      "precision": 0.37627737226277375,
+      "recall": 0.5440633245382586,
+      "f1-score": 0.4448759439050701,
+      "support": 1895.0
+    },
+    "confusion": {
+      "precision": 0.1482587064676617,
+      "recall": 0.4790996784565916,
+      "f1-score": 0.22644376899696048,
+      "support": 622.0
+    },
+    "fear": {
+      "precision": 0.5188442211055276,
+      "recall": 0.7182608695652174,
+      "f1-score": 0.6024799416484318,
+      "support": 575.0
+    },
+    "guilt_remorse": {
+      "precision": 0.1165644171779141,
+      "recall": 0.2733812949640288,
+      "f1-score": 0.16344086021505377,
+      "support": 139.0
+    },
+    "hope_optimism": {
+      "precision": 0.2974006116207951,
+      "recall": 0.5948012232415902,
+      "f1-score": 0.3965341488277268,
+      "support": 654.0
+    },
+    "joy": {
+      "precision": 0.5625394819962097,
+      "recall": 0.5366074118710455,
+      "f1-score": 0.5492675404780262,
+      "support": 3319.0
+    },
+    "love_care": {
+      "precision": 0.3404081632653061,
+      "recall": 0.6,
+      "f1-score": 0.434375,
+      "support": 695.0
+    },
+    "neutral": {
+      "precision": 0.8742497294106071,
+      "recall": 0.6140290255701452,
+      "f1-score": 0.7213900052774733,
+      "support": 14470.0
+    },
+    "sadness": {
+      "precision": 0.5748129675810474,
+      "recall": 0.6293515358361774,
+      "f1-score": 0.6008471814923427,
+      "support": 1465.0
+    },
+    "surprise": {
+      "precision": 0.26859504132231404,
+      "recall": 0.5508474576271186,
+      "f1-score": 0.3611111111111111,
+      "support": 472.0
+    },
+    "accuracy": 0.5938451411174196,
+    "macro avg": {
+      "precision": 0.4077950712210156,
+      "recall": 0.5540441821670172,
+      "f1-score": 0.4500765501952196,
+      "support": 24306.0
+    },
+    "weighted avg": {
+      "precision": 0.7009472588159675,
+      "recall": 0.5938451411174196,
+      "f1-score": 0.6264491915950641,
+      "support": 24306.0
+    },
+    "_n_train_rows": 113393
+  },
+  "intent": {
+    "advice_seeking": {
+      "precision": 0.29545454545454547,
+      "recall": 0.7647058823529411,
+      "f1-score": 0.4262295081967213,
+      "support": 17.0
+    },
+    "casual_conversation": {
+      "precision": 0.7294776119402985,
+      "recall": 0.9630541871921182,
+      "f1-score": 0.8301486199575372,
+      "support": 406.0
+    },
+    "crisis_disclosure": {
+      "precision": 0.3333333333333333,
+      "recall": 0.25,
+      "f1-score": 0.2857142857142857,
+      "support": 4.0
+    },
+    "emotional_expression": {
+      "precision": 0.9117385899484994,
+      "recall": 0.9277195518612216,
+      "f1-score": 0.9196596506941335,
+      "support": 5534.0
+    },
+    "emotional_support": {
+      "precision": 0.41379310344827586,
+      "recall": 0.631578947368421,
+      "f1-score": 0.5,
+      "support": 19.0
+    },
+    "help_seeking": {
+      "precision": 0.3333333333333333,
+      "recall": 0.7058823529411765,
+      "f1-score": 0.4528301886792453,
+      "support": 17.0
+    },
+    "information_seeking": {
+      "precision": 0.923679727427598,
+      "recall": 0.8205205811138014,
+      "f1-score": 0.8690495271678154,
+      "support": 3304.0
+    },
+    "problem_description": {
+      "precision": 0.4084507042253521,
+      "recall": 0.6904761904761905,
+      "f1-score": 0.5132743362831859,
+      "support": 126.0
+    },
+    "accuracy": 0.8869205473639546,
+    "macro avg": {
+      "precision": 0.5436576186389046,
+      "recall": 0.7192422116632338,
+      "f1-score": 0.5996132645866155,
+      "support": 9427.0
+    },
+    "weighted avg": {
+      "precision": 0.8979438497522201,
+      "recall": 0.8869205473639546,
+      "f1-score": 0.8897884717055251,
+      "support": 9427.0
+    },
+    "_n_train_rows": 43865
+  },
+  "headline_crisis_recall": {
+    "crisis_disclosure_recall": 0.25,
+    "crisis_disclosure_precision": 0.3333333333333333,
+    "crisis_disclosure_support": 4.0
+  }
+}

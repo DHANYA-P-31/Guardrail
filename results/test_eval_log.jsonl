@@ -1,0 +1,4 @@
+{"run": 1, "timestamp": "2026-10-09 20:21:10", "models": ["baseline", "distilbert"]}
+{"run": 2, "timestamp": "2026-10-10 00:40:32", "models": ["baseline", "distilbert"]}
+{"run": 3, "timestamp": "2026-10-10 00:49:42", "models": ["baseline", "distilbert"]}
+{"run": 4, "timestamp": "2026-10-11 21:57:52", "models": ["baseline", "distilbert"]}

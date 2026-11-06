@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+artifacts/
+data/raw/
+data/interim/
+*.ckpt
+*.safetensors
+.env

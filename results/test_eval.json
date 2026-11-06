@@ -1,0 +1,293 @@
+{
+  "run": 4,
+  "timestamp": "2026-10-11 21:57:52",
+  "test_set_sha256": "9e0b9c71c8243f119f140b582f848368ace804a579e6940a735c442972c04bd2",
+  "n_test": 24517,
+  "results": {
+    "baseline": {
+      "model_version": "m1-v0.2-baseline-tfidf-lr",
+      "emotion": {
+        "n": 24290,
+        "accuracy": 0.5965006175380815,
+        "macro_f1_over_supported_classes": 0.44881849722525463,
+        "n_classes_with_support": 10,
+        "per_class": {
+          "joy": {
+            "precision": 0.5553470919324578,
+            "recall": 0.5349397590361445,
+            "f1": 0.5449524393985885,
+            "support": 3320
+          },
+          "sadness": {
+            "precision": 0.5821876867901973,
+            "recall": 0.6648464163822526,
+            "f1": 0.6207775653282346,
+            "support": 1465
+          },
+          "anger": {
+            "precision": 0.38676470588235295,
+            "recall": 0.5548523206751055,
+            "f1": 0.4558058925476603,
+            "support": 1896
+          },
+          "fear": {
+            "precision": 0.4937810945273632,
+            "recall": 0.6904347826086956,
+            "f1": 0.5757795503988398,
+            "support": 575
+          },
+          "love_care": {
+            "precision": 0.35130848532910386,
+            "recall": 0.6364942528735632,
+            "f1": 0.45273377618804295,
+            "support": 696
+          },
+          "surprise": {
+            "precision": 0.2445141065830721,
+            "recall": 0.4968152866242038,
+            "f1": 0.3277310924369748,
+            "support": 471
+          },
+          "confusion": {
+            "precision": 0.15841584158415842,
+            "recall": 0.4887459807073955,
+            "f1": 0.239275875639512,
+            "support": 622
+          },
+          "guilt_remorse": {
+            "precision": 0.10746268656716418,
+            "recall": 0.2608695652173913,
+            "f1": 0.1522198731501057,
+            "support": 138
+          },
+          "hope_optimism": {
+            "precision": 0.29700690713737526,
+            "recall": 0.5926493108728943,
+            "f1": 0.39570552147239263,
+            "support": 653
+          },
+          "neutral": {
+            "precision": 0.8780632411067194,
+            "recall": 0.6147779161477792,
+            "f1": 0.723203385692195,
+            "support": 14454
+          }
+        }
+      },
+      "intent": {
+        "n": 9380,
+        "accuracy": 0.8877398720682302,
+        "macro_f1_over_supported_classes": 0.5924697158455622,
+        "n_classes_with_support": 8,
+        "per_class": {
+          "emotional_expression": {
+            "precision": 0.9120141342756184,
+            "recall": 0.9274164570607258,
+            "f1": 0.9196508106182077,
+            "support": 5566
+          },
+          "emotional_support": {
+            "precision": 0.3409090909090909,
+            "recall": 0.7142857142857143,
+            "f1": 0.46153846153846156,
+            "support": 21
+          },
+          "advice_seeking": {
+            "precision": 0.3170731707317073,
+            "recall": 0.8125,
+            "f1": 0.45614035087719296,
+            "support": 16
+          },
+          "information_seeking": {
+            "precision": 0.9200546634779638,
+            "recall": 0.8263270942006751,
+            "f1": 0.870675719366311,
+            "support": 3259
+          },
+          "help_seeking": {
+            "precision": 0.28125,
+            "recall": 0.5625,
+            "f1": 0.375,
+            "support": 16
+          },
+          "problem_description": {
+            "precision": 0.3621621621621622,
+            "recall": 0.6036036036036037,
+            "f1": 0.4527027027027027,
+            "support": 111
+          },
+          "crisis_disclosure": {
+            "precision": 0.6666666666666666,
+            "recall": 0.25,
+            "f1": 0.36363636363636365,
+            "support": 8
+          },
+          "casual_conversation": {
+            "precision": 0.75,
+            "recall": 0.9556135770234987,
+            "f1": 0.8404133180252583,
+            "support": 383
+          }
+        }
+      },
+      "crisis_disclosure": {
+        "support": 8,
+        "recall_hits": 2,
+        "recall": 0.25,
+        "recall_95ci_wilson": [
+          0.07147768885802765,
+          0.5907301208974108
+        ],
+        "true_crisis_rows_predicted_as": {
+          "crisis_disclosure": 2,
+          "emotional_support": 1,
+          "help_seeking": 4,
+          "problem_description": 1
+        },
+        "times_predicted_crisis": 3,
+        "times_predicted_crisis_correctly": 2
+      }
+    },
+    "distilbert": {
+      "model_version": "m1-v1.0-distilbert-kaggle-epoch-unverified",
+      "emotion": {
+        "n": 24290,
+        "accuracy": 0.6300535199670646,
+        "macro_f1_over_supported_classes": 0.5111498492407709,
+        "n_classes_with_support": 10,
+        "per_class": {
+          "joy": {
+            "precision": 0.5589333333333333,
+            "recall": 0.6313253012048192,
+            "f1": 0.5929278642149929,
+            "support": 3320
+          },
+          "sadness": {
+            "precision": 0.6219806763285024,
+            "recall": 0.7030716723549488,
+            "f1": 0.6600448574174944,
+            "support": 1465
+          },
+          "anger": {
+            "precision": 0.48758049678012877,
+            "recall": 0.5590717299578059,
+            "f1": 0.5208845208845209,
+            "support": 1896
+          },
+          "fear": {
+            "precision": 0.5580246913580247,
+            "recall": 0.7860869565217391,
+            "f1": 0.6527075812274368,
+            "support": 575
+          },
+          "love_care": {
+            "precision": 0.43554327808471455,
+            "recall": 0.6795977011494253,
+            "f1": 0.5308641975308642,
+            "support": 696
+          },
+          "surprise": {
+            "precision": 0.2899906454630496,
+            "recall": 0.6581740976645435,
+            "f1": 0.4025974025974026,
+            "support": 471
+          },
+          "confusion": {
+            "precision": 0.21597187343043697,
+            "recall": 0.6913183279742765,
+            "f1": 0.3291236127057023,
+            "support": 622
+          },
+          "guilt_remorse": {
+            "precision": 0.21851851851851853,
+            "recall": 0.427536231884058,
+            "f1": 0.28921568627450983,
+            "support": 138
+          },
+          "hope_optimism": {
+            "precision": 0.2810333963453056,
+            "recall": 0.6830015313935681,
+            "f1": 0.3982142857142857,
+            "support": 653
+          },
+          "neutral": {
+            "precision": 0.9041123572799838,
+            "recall": 0.6190673861906738,
+            "f1": 0.7349184838404994,
+            "support": 14454
+          }
+        }
+      },
+      "intent": {
+        "n": 9380,
+        "accuracy": 0.9590618336886994,
+        "macro_f1_over_supported_classes": 0.5735071042926181,
+        "n_classes_with_support": 8,
+        "per_class": {
+          "emotional_expression": {
+            "precision": 0.9907663896583564,
+            "recall": 0.9638878907653611,
+            "f1": 0.9771423367635006,
+            "support": 5566
+          },
+          "emotional_support": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "advice_seeking": {
+            "precision": 0.6666666666666666,
+            "recall": 0.875,
+            "f1": 0.7567567567567568,
+            "support": 16
+          },
+          "information_seeking": {
+            "precision": 0.9559404436341538,
+            "recall": 0.9653267873580853,
+            "f1": 0.9606106870229008,
+            "support": 3259
+          },
+          "help_seeking": {
+            "precision": 0.16326530612244897,
+            "recall": 1.0,
+            "f1": 0.2807017543859649,
+            "support": 16
+          },
+          "problem_description": {
+            "precision": 0.6869565217391305,
+            "recall": 0.7117117117117117,
+            "f1": 0.6991150442477876,
+            "support": 111
+          },
+          "crisis_disclosure": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "casual_conversation": {
+            "precision": 0.8545454545454545,
+            "recall": 0.9817232375979112,
+            "f1": 0.913730255164034,
+            "support": 383
+          }
+        }
+      },
+      "crisis_disclosure": {
+        "support": 8,
+        "recall_hits": 0,
+        "recall": 0.0,
+        "recall_95ci_wilson": [
+          0.0,
+          0.3244156195108769
+        ],
+        "true_crisis_rows_predicted_as": {
+          "help_seeking": 8
+        },
+        "times_predicted_crisis": 0,
+        "times_predicted_crisis_correctly": 0
+      }
+    }
+  }
+}

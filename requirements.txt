@@ -1,0 +1,11 @@
+fastapi>=0.115
+uvicorn[standard]>=0.34
+pydantic>=2.10
+httpx>=0.28
+pytest>=8.3
+pandas>=2.2
+scikit-learn>=1.6
+pyarrow>=18.0  
+transformers>=4.47
+torch>=2.5
+datasets>=3.2

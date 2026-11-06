@@ -1,0 +1,434 @@
+{
+  "stub": {
+    "model_version": "m1-v0.2-stub-DO-NOT-EVALUATE",
+    "calibrated": false,
+    "n_pass": 4,
+    "n_top1_correct": 6,
+    "n_total": 15,
+    "results": [
+      {
+        "id": "adv-001",
+        "category": "negation",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "crisis_disclosure",
+        "expected_intent": "emotional_expression",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-002",
+        "category": "past_tense",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "crisis_disclosure",
+        "expected_intent": "emotional_expression",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-003",
+        "category": "third_party",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "information_seeking",
+        "expected_intent": "help_seeking",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-004",
+        "category": "metaphor",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-005",
+        "category": "metaphor",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "casual_conversation",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-006",
+        "category": "information_seeking",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "crisis_disclosure",
+        "expected_intent": "information_seeking",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-007",
+        "category": "implicit_crisis",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-008",
+        "category": "euphemism",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-009",
+        "category": "codeswitch",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-010",
+        "category": "burden",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-011",
+        "category": "fictional_frame",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "information_seeking",
+        "expected_intent": "information_seeking",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-012",
+        "category": "injection",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "casual_conversation",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-013",
+        "category": "positive",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "casual_conversation",
+        "expected_intent": "casual_conversation",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-014",
+        "category": "clear_distress",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "emotional_support",
+        "expected_intent": "emotional_support",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-015",
+        "category": "garbage",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "ABSTAIN",
+        "got_abstain": true
+      }
+    ]
+  },
+  "baseline": {
+    "model_version": "m1-v0.2-baseline-tfidf-lr",
+    "calibrated": false,
+    "n_pass": 2,
+    "n_top1_correct": 8,
+    "n_total": 15,
+    "results": [
+      {
+        "id": "adv-001",
+        "category": "negation",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-002",
+        "category": "past_tense",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-003",
+        "category": "third_party",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "problem_description",
+        "expected_intent": "help_seeking",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-004",
+        "category": "metaphor",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-005",
+        "category": "metaphor",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "casual_conversation",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-006",
+        "category": "information_seeking",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "information_seeking",
+        "expected_intent": "information_seeking",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-007",
+        "category": "implicit_crisis",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "information_seeking",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-008",
+        "category": "euphemism",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-009",
+        "category": "codeswitch",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-010",
+        "category": "burden",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-011",
+        "category": "fictional_frame",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "information_seeking",
+        "expected_intent": "information_seeking",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-012",
+        "category": "injection",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "casual_conversation",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-013",
+        "category": "positive",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "casual_conversation",
+        "expected_intent": "casual_conversation",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-014",
+        "category": "clear_distress",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "problem_description",
+        "expected_intent": "emotional_support",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-015",
+        "category": "garbage",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "ABSTAIN",
+        "got_abstain": true
+      }
+    ]
+  },
+  "distilbert": {
+    "model_version": "m1-v1.0-distilbert-4epoch",
+    "calibrated": true,
+    "n_pass": 5,
+    "n_top1_correct": 7,
+    "n_total": 15,
+    "results": [
+      {
+        "id": "adv-001",
+        "category": "negation",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-002",
+        "category": "past_tense",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-003",
+        "category": "third_party",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "help_seeking",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-004",
+        "category": "metaphor",
+        "passed": false,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-005",
+        "category": "metaphor",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "casual_conversation",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-006",
+        "category": "information_seeking",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "information_seeking",
+        "expected_intent": "information_seeking",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-007",
+        "category": "implicit_crisis",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-008",
+        "category": "euphemism",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-009",
+        "category": "codeswitch",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_expression",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-010",
+        "category": "burden",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "crisis_disclosure",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-011",
+        "category": "fictional_frame",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "information_seeking",
+        "expected_intent": "information_seeking",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-012",
+        "category": "injection",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "casual_conversation",
+        "got_abstain": true
+      },
+      {
+        "id": "adv-013",
+        "category": "positive",
+        "passed": true,
+        "top1_correct": true,
+        "got_intent": "casual_conversation",
+        "expected_intent": "casual_conversation",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-014",
+        "category": "clear_distress",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "emotional_support",
+        "got_abstain": false
+      },
+      {
+        "id": "adv-015",
+        "category": "garbage",
+        "passed": false,
+        "top1_correct": false,
+        "got_intent": "emotional_expression",
+        "expected_intent": "ABSTAIN",
+        "got_abstain": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "val_frac": 0.15,
+  "test_frac": 0.15,
+  "n_train": 114410,
+  "n_val": 24516,
+  "n_test": 24517,
+  "test_set_sha256": "9e0b9c71c8243f119f140b582f848368ace804a579e6940a735c442972c04bd2",
+  "note": "Do not look at test.jsonl content until the final reported run."
+}
